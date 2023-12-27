@@ -1,4 +1,4 @@
-# Part 3: Run the Node in the Background as a tmux Session
+# Tmux Session (optional - not necessary)
 
 I eventually encountered the problem everytime my computer went to sleep, say on the macbook laptop, the terminal ssh session would break and the node would not run and sync in the background.
 
@@ -7,6 +7,16 @@ I was given advice that an easy fix was to ***"tmux it"*** for running in the ba
 This was brand new to me and required a bit of an overwhelming learning curve that now seems simple and really is great to know.
 
 In reality, you only need to know about 5 things.
+
+With Tmux you still have some manual set and stop work to do.
+
+Tmux is really a temporary solution. The robust and reliable way would be to run the node upon pi startup, reboot, and automatically run as a systemd service in the background. Set and forget. 
+
+Follow these readme setps once again from [Chris (Eeysirhc)](https://github.com/Eeysirhc)
+
+https://github.com/Eeysirhc/ergo-rpi#readme
+
+Hat tip to Chris for the great tutorial, largely adapted here with notes.
 
 ## So what is Tmux?
 [Tmux on Github](https://github.com/tmux/tmux) describes their projects as:
