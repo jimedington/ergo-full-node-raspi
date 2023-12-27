@@ -1,15 +1,14 @@
 # Part 4: Robust Run Node in Pi Background Systemd (in-work)
 
 ## Run on Reboot & in the Background
-With Tmux you still have some manual set and stop work to do.
-
-Tmux is really a temporary solution. The robust and reliable way would be to run the node upon pi startup, reboot, and automatically run as a systemd service in the background. Set and forget. 
-
-Follow these readme setps once again from [Chris (Eeysirhc)](https://github.com/Eeysirhc)
-
-https://github.com/Eeysirhc/ergo-rpi#readme
-
-Hat tip to Chris for the great tutorial, largely adapted here with notes.
+Prior to setting up the "always on" Ergo Node service, reboot your pi so that the process is no longer running
+```bash
+sudo reboot
+```
+Wait 5 minutes, then go ahead and ssh back into your headless pi
+```bash
+ssh pi@headless.local
+```
 
 ## systemd
 
